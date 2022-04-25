@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plane Page</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Feather icon css -->
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap js -->
+    <script
+      defer
+      src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script defer src="vendor/jquery-3.3.1.min.js"></script>
+
+    <!-- custom js -->
+    <script defer src="js/app.js"></script>
+  </head>
+  <body>
+    <section class="main container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-xl-2 vh-100 side-bar overflow-auto">
+          <div class="d-flex py-3">
+            <div class="d-flex align-items-center gap-1">
+              <span class="bg-primary p-2 pb-1 rounded text-light">
+                <i class="feather-shopping-bag"></i>
+              </span>
+              <span class="text-primary fw-bolder text-uppercase h5 mb-0"
+                >My Shop</span
+              >
+            </div>
+
+            <button
+              class="btn text-secondary rounded d-flex align-items-center ms-auto d-block d-lg-none"
+            >
+              <ion-icon
+                class="icon-mobile-nav nav-close"
+                name="close-outline"
+              ></ion-icon>
+            </button>
+          </div>
+
+          <nav>
+            <ul class="list-unstyled">
+              <!-- dashboard -->
+              <li class="d-flex align-items-center">
+                <a
+                  href="index.html"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-home"></i>Dashboard</a
+                >
+              </li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-shopping-bag"></i>Today Orders</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-grid"></i>Recent Items</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-pie-chart"></i>Data Analysis</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list active"
+                  ><i class="feather-file"></i>Plane Page</a
+                >
+              </li>
+
+              <li class="py-3"></li>
+
+              <!-- User Management !Fake Pages!-->
+              <li class="fw-bold text-uppercase nav-header mb-2">
+                User Management
+              </li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-user-plus"></i>Create User</a
+                >
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-users"></i>Manage User</span
+                  >
+                  <span class="badge text-primary shadow-sm">100</span></a
+                >
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-user-minus"></i>Banned User</span
+                  >
+                </a>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-bar-chart-2"></i>User Analysis</span
+                  >
+                </a>
+              </li>
+              <li class="py-3"></li>
+
+              <!-- Inventory !Fake Pages! -->
+              <li class="fw-bold text-uppercase nav-header mb-2">Inventory</li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-file-plus"></i>Create New Stock</a
+                >
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-list"></i>All Stock</span
+                  >
+                </a>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-file-minus"></i>Out of Stock</span
+                  ><span class="badge text-primary shadow-sm">16</span>
+                </a>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-bar-chart-2"></i>Stock Analysis</span
+                  >
+                </a>
+              </li>
+              <li class="py-3"></li>
+
+              <!-- manage item -->
+              <li class="fw-bold text-uppercase nav-header mb-2">
+                Item Management
+              </li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="item_add.html"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-plus-circle"></i>Create New Item</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="item_list.html"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-server"></i>Item Lists</span
+                  >
+                  <span class="badge text-primary shadow-sm">57</span></a
+                >
+              </li>
+              <li class="py-3"></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-lg-9 col-xl-10 vh-100 content">
+          <div class="row g-3 p-2">
+            <!-- Main Nav Start-->
+            <div
+              class="col-12 p-2 position-sticky bg-primary rounded header-nav d-flex justify-content-between align-items-center"
+            >
+              <button
+                class="btn btn-primary border-0 rounded d-flex align-items-center d-block d-lg-none"
+              >
+                <ion-icon
+                  class="icon-mobile-nav nav-open"
+                  name="menu-outline"
+                ></ion-icon>
+              </button>
+
+              <form class="d-sm-flex d-none gap-1" action="" method="post">
+                <input type="search" class="form-control" />
+                <button class="btn btn-light text-primary">
+                  <i class="feather-search"></i>
+                </button>
+              </form>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm shadow-sm btn-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="rounded-pill w-25 h-25"
+                    src="img/user/avatar1.jpg"
+                    alt="admin1"
+                  />
+                  <span>Qui3tK1D</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Main Nav End -->
+
+            <!-- Content Start -->
+            <div class="col-12 p-0">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Plane Page
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Item</title>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/app.css" />
+
+    <!-- Feather icon css -->
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Ionicon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Bootstrap js -->
+    <script defer src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script defer src="vendor/jquery-3.3.1.min.js"></script>
+
+    <!-- custom js -->
+    <script defer src="js/app.js"></script>
+    <script defer src="js/add_item.js"></script>
+  </head>
+  <body>
+    <section class="main container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-xl-2 vh-100 side-bar overflow-auto">
+          <div class="d-flex py-3">
+            <div class="d-flex align-items-center gap-1">
+              <span class="bg-primary p-2 rounded text-light">
+                <i class="feather-shopping-bag d-flex"></i>
+              </span>
+              <span class="text-primary fw-bolder text-uppercase h5 mb-0"
+                >My Shop</span
+              >
+            </div>
+            <button
+              class="btn text-secondary rounded d-flex align-items-center ms-auto d-block d-lg-none"
+            >
+              <ion-icon
+                class="icon-mobile-nav nav-close"
+                name="close-outline"
+              ></ion-icon>
+            </button>
+          </div>
+
+          <nav>
+            <ul class="list-unstyled">
+              <!-- dashboard -->
+              <li class="d-flex align-items-center">
+                <a
+                  href="index.html"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-home"></i>Dashboard</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-shopping-bag"></i>Today Orders</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-grid"></i>Recent Items</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-pie-chart"></i>Data Analysis</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center">
+                <a
+                  href="planepage.html"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-file"></i>Plane Page</a
+                >
+              </li>
+
+              <li class="py-3"></li>
+
+              <!-- User Management !Fake Pages!-->
+              <li class="fw-bold text-uppercase nav-header mb-2">
+                User Management
+              </li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-user-plus"></i>Create User</a
+                >
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-users"></i>Manage User</span
+                  >
+                  <span class="badge bg-primary text-white control-badge"
+                    >100</span
+                  ></a
+                >
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-user-minus"></i>Banned User</span
+                  >
+                </a>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-bar-chart-2"></i>User Analysis</span
+                  >
+                </a>
+              </li>
+              <li class="py-3"></li>
+
+              <!-- Inventory !Fake Pages! -->
+              <li class="fw-bold text-uppercase nav-header mb-2">Inventory</li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="#"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list"
+                  ><i class="feather-file-plus"></i>Create New Stock</a
+                >
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-list"></i>All Stock</span
+                  >
+                </a>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-file-minus"></i>Out of Stock</span
+                  ><span class="badge bg-primary text-white control-badge"
+                    >16</span
+                  >
+                </a>
+              </li>
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="#"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-bar-chart-2"></i>Stock Analysis</span
+                  >
+                </a>
+              </li>
+              <li class="py-3"></li>
+
+              <!-- manage item -->
+              <li class="fw-bold text-uppercase nav-header mb-2">
+                Item Management
+              </li>
+              <li class="d-flex align-items-center">
+                <a
+                  href="item_add.html"
+                  class="flex-grow-1 d-flex align-items-center gap-1 text-decoration-none p-2 nav-list active"
+                  ><i class="feather-plus-circle"></i>Create New Item</a
+                >
+              </li>
+
+              <li class="d-flex align-items-center justify-content-between">
+                <a
+                  href="item_list.html"
+                  class="flex-grow-1 text-decoration-none p-2 d-flex justify-content-between align-items-center nav-list"
+                  ><span class="d-flex align-items-center gap-1"
+                    ><i class="feather-server"></i>Item List</span
+                  >
+                  <span class="badge bg-primary text-white control-badge"
+                    >57</span
+                  ></a
+                >
+              </li>
+
+              <li class="py-3"></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-lg-9 col-xl-10 vh-100 content">
+          <div class="row g-3 p-2">
+            <!-- Main Nav Start-->
+            <div
+              class="col-12 p-2 position-sticky bg-primary rounded header-nav d-flex justify-content-between align-items-center"
+            >
+              <button
+                class="btn btn-primary border-0 rounded d-flex align-items-center d-block d-lg-none"
+              >
+                <ion-icon
+                  class="icon-mobile-nav nav-open"
+                  name="menu-outline"
+                ></ion-icon>
+              </button>
+
+              <form class="d-sm-flex d-none gap-1" action="" method="post">
+                <input
+                  type="search"
+                  class="form-control border-0"
+                  placeholder="Search Everything"
+                />
+                <button class="btn btn-light text-primary searchIcon">
+                  <i class="feather-search d-flex"></i>
+                </button>
+              </form>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm shadow-sm btn-light dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    class="rounded-pill w-25 h-25"
+                    src="img/user/avatar1.jpg"
+                    alt="admin1"
+                  />
+                  <span class="text-primary">Qui3tK1D</span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Main Nav End -->
+
+            <div class="col-12 p-0">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                  <li class="breadcrumb-item">
+                    <a href="index.html">Home</a>
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a href="item_list.html">Item</a>
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Add Item
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="col-xl-8 p-0">
+              <div class="card shadow-sm">
+                <div class="card-header">
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <h5
+                      class="d-flex mb-0 align-items-center gap-1 text-primary"
+                    >
+                      <i class="feather-plus-circle"></i>
+                      Add Item
+                    </h5>
+                    <a
+                      href="item_list.html"
+                      class="text-decoration-none btn btn-outline-primary hoverWhite"
+                    >
+                      <i class="d-flex feather-list"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <form method="post" class="row g-3">
+                    <div class="col-md-6">
+                      <label
+                        for="photo"
+                        class="form-label d-flex gap-1 align-items-center text-secondary"
+                      >
+                        Item Photo
+                        <i
+                          class="feather-info d-flex"
+                          tabindex="0"
+                          data-bs-toggle="popover"
+                          data-bs-trigger="hover focus"
+                          data-bs-content="Only Support JPG, PNG"
+                          disabled
+                        ></i>
+                      </label>
+                      <input
+                        type="file"
+                        name="photo"
+                        id="photo"
+                        class="form-control"
+                        required
+                      />
+
+                      <label for="item-name" class="form-label mt-3"
+                        >Item Name</label
+                      >
+                      <input type="text" id="item-name" class="form-control" />
+
+                      <label for="item-type" class="form-label mt-3"
+                        >Item Type</label
+                      >
+                      <select
+                        name="item-type"
+                        id="item-type"
+                        class="form-select"
+                      >
+                        <option value="1">Fruit</option>
+                        <option value="2">Drink</option>
+                      </select>
+
+                      <label for="item-cat" class="form-label mt-3"
+                        >Category</label
+                      >
+                      <select name="item-cat" id="item-cat" class="form-select">
+                        <option value="" selected disabled>
+                          Choose a Category
+                        </option>
+                      </select>
+
+                      <label for="item-subtype" class="form-label mt-3"
+                        >Sub Category</label
+                      >
+                      <select
+                        name="item-subtype"
+                        id="item-subtype"
+                        class="form-select"
+                      >
+                        <option value="" selected disabled>
+                          Choose a Subcategory
+                        </option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <label for="item-q" class="form-label"
+                            >Item Quantity</label
+                          >
+                          <input
+                            type="text"
+                            name="item-q"
+                            id="item-q"
+                            class="form-control"
+                          />
+                        </div>
+                        <div class="col-md-6">
+                          <label for="item-unit" class="form-label">Unit</label>
+                          <select
+                            name="item-unit"
+                            id="item-unit"
+                            class="form-select"
+                          >
+                            <option value="1">Fruit</option>
+                            <option value="2">Drink</option>
+                          </select>
+                        </div>
+
+                        <div class="col-12">
+                          <label for="price" class="form-label">Price</label>
+                          <input type="text" id="price" class="form-control" />
+                        </div>
+
+                        <div class="col-12">
+                          <label for="des" class="form-label"
+                            >Description</label
+                          >
+                          <textarea
+                            name="des"
+                            id="des"
+                            rows="8"
+                            class="form-control"
+                          ></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 text-end">
+                      <button class="btn btn-primary text-white">
+                        Add Item
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

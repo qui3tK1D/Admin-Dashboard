@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+
+$font-family-sans-serif: "Rubik", sans-serif;
+$primary: #8869e1;
+$mainHeader: #2d234b;
+$btnColor: #fff;
+$accent: #f5f1ff;
+
+h4,
+h5 {
+  color: $mainHeader;
+}
+
+.subList {
+  color: $mainHeader;
+}
+
+.hoverWhite:hover {
+  color: $btnColor !important;
+}
+
+.searchIcon:hover {
+  background: $accent !important;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
